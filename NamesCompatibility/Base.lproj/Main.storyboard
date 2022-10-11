@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NamesCompatibility" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="NamesCompatibility" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,6 +40,10 @@
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="resultButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="1DV-0c-mUw"/>
+                                    <segue destination="BYx-dm-rvw" kind="show" id="jHp-53-kf3"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0yN-BR-eRg">
                                 <rect key="frame" x="20" y="225" width="350" height="98"/>
@@ -92,15 +96,19 @@
                             <constraint firstItem="2I5-eY-E2O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="uvL-vK-36X"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="partnerNameTF" destination="pNz-b4-Bzz" id="rxv-dN-5Sx"/>
+                        <outlet property="yourNameTF" destination="czA-wU-kHU" id="YqW-Fj-dLq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53.846153846153847" y="-34.123222748815166"/>
+            <point key="canvasLocation" x="-52" y="-34"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="bJc-B0-L4R">
             <objects>
-                <viewController id="BYx-dm-rvw" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYx-dm-rvw" customClass="ResultViewController" customModule="NamesCompatibility" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lNr-zs-ZUY">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,6 +172,12 @@
                             <constraint firstItem="jPV-Ai-QpU" firstAttribute="top" secondItem="jvS-vB-rB6" secondAttribute="bottom" constant="20" id="z16-GQ-pdJ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Nsc-zw-H5b"/>
+                    <connections>
+                        <outlet property="namesLabel" destination="cVL-5W-s0D" id="8so-19-G1y"/>
+                        <outlet property="progressView" destination="jvS-vB-rB6" id="GNq-6q-3sm"/>
+                        <outlet property="resultLabel" destination="jPV-Ai-QpU" id="MWC-RZ-gkC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AjL-zd-bgX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

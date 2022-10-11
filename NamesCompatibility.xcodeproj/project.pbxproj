@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		509E09A728F5A2DF00BDDA17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509E09A628F5A2DF00BDDA17 /* AppDelegate.swift */; };
 		509E09A928F5A2DF00BDDA17 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509E09A828F5A2DF00BDDA17 /* SceneDelegate.swift */; };
-		509E09AB28F5A2DF00BDDA17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509E09AA28F5A2DF00BDDA17 /* ViewController.swift */; };
+		509E09AB28F5A2DF00BDDA17 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509E09AA28F5A2DF00BDDA17 /* FirstViewController.swift */; };
 		509E09AE28F5A2DF00BDDA17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 509E09AC28F5A2DF00BDDA17 /* Main.storyboard */; };
 		509E09B028F5A2E500BDDA17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 509E09AF28F5A2E500BDDA17 /* Assets.xcassets */; };
 		509E09B328F5A2E500BDDA17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 509E09B128F5A2E500BDDA17 /* LaunchScreen.storyboard */; };
+		50F9DC5528F5B5F5004464CC /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9DC5428F5B5F5004464CC /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		509E09A328F5A2DF00BDDA17 /* NamesCompatibility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NamesCompatibility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		509E09A628F5A2DF00BDDA17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		509E09A828F5A2DF00BDDA17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		509E09AA28F5A2DF00BDDA17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		509E09AA28F5A2DF00BDDA17 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		509E09AD28F5A2DF00BDDA17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		509E09AF28F5A2E500BDDA17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		509E09B228F5A2E500BDDA17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		509E09B428F5A2E500BDDA17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50F9DC5428F5B5F5004464CC /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				509E09A628F5A2DF00BDDA17 /* AppDelegate.swift */,
 				509E09A828F5A2DF00BDDA17 /* SceneDelegate.swift */,
-				509E09AA28F5A2DF00BDDA17 /* ViewController.swift */,
+				509E09AA28F5A2DF00BDDA17 /* FirstViewController.swift */,
+				50F9DC5428F5B5F5004464CC /* ResultViewController.swift */,
 				509E09AC28F5A2DF00BDDA17 /* Main.storyboard */,
 				509E09AF28F5A2E500BDDA17 /* Assets.xcassets */,
 				509E09B128F5A2E500BDDA17 /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				509E09AB28F5A2DF00BDDA17 /* ViewController.swift in Sources */,
+				509E09AB28F5A2DF00BDDA17 /* FirstViewController.swift in Sources */,
 				509E09A728F5A2DF00BDDA17 /* AppDelegate.swift in Sources */,
 				509E09A928F5A2DF00BDDA17 /* SceneDelegate.swift in Sources */,
+				50F9DC5528F5B5F5004464CC /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
