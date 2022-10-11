@@ -25,6 +25,7 @@ class FirstViewController: UIViewController {
     }
 
     @IBAction func resultButtonTapped() {
+        performSegue(withIdentifier: "goToResult", sender: nil)
     }
     
 }

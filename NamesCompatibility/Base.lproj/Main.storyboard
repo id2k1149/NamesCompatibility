@@ -42,7 +42,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="resultButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="1DV-0c-mUw"/>
-                                    <segue destination="BYx-dm-rvw" kind="show" id="jHp-53-kf3"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0yN-BR-eRg">
@@ -99,6 +98,7 @@
                     <connections>
                         <outlet property="partnerNameTF" destination="pNz-b4-Bzz" id="rxv-dN-5Sx"/>
                         <outlet property="yourNameTF" destination="czA-wU-kHU" id="YqW-Fj-dLq"/>
+                        <segue destination="BYx-dm-rvw" kind="show" identifier="goToResult" id="RNP-dp-Y91"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
