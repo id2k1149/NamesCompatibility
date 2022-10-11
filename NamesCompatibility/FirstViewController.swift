@@ -30,3 +30,22 @@ class FirstViewController: UIViewController {
     
 }
 
+// add keyboard to screen
+
+extension FirstViewController: UITextFieldDelegate {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        if textField == yourNameTF {
+            partnerNameTF.becomeFirstResponder()
+        } else {
+            resultButtonTapped()
+        }
+        return true
+    }
+}
+ 
+
