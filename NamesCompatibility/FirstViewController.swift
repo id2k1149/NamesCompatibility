@@ -29,6 +29,7 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func unwindSegueToFirstVC(segue: UIStoryboardSegue) {
+        guard segue.identifier == "unwindSegue" else { return }
         yourNameTF.text = ""
         partnerNameTF.text = ""
     }
