@@ -28,6 +28,13 @@ class FirstViewController: UIViewController {
         performSegue(withIdentifier: "goToResult", sender: nil)
     }
     
+    //unwind -> go back from screen 2 to 1
+    @IBAction func unwindSegueToFirstVC(segue: UIStoryboardSegue) {
+        // clear names values
+        yourNameTF.text = ""
+        partnerNameTF.text = ""
+    }
+    
 }
 
 // add keyboard to screen
