@@ -13,6 +13,8 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var partnerNameTF: UITextField!
     
+    @IBOutlet weak var myLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -33,6 +35,10 @@ class FirstViewController: UIViewController {
         // clear names values
         yourNameTF.text = ""
         partnerNameTF.text = ""
+        
+        // add myLabel
+        guard let sourceVC = segue.source as? ResultViewController else { return }
+        myLabel.text = sourceVC.namesLabel.text
     }
     
 }
