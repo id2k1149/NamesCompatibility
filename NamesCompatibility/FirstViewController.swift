@@ -13,12 +13,15 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var partnerNameTF: UITextField!
     
-    @IBOutlet weak var myLabel: UILabel!
+    // example of return value
+//    @IBOutlet weak var myLabel: UILabel!
     
+    /* no actions so can be deleted
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+     */
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destinationVC = segue.destination as? ResultViewController else { return }

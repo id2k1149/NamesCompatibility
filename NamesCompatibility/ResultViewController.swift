@@ -37,9 +37,8 @@ class ResultViewController: UIViewController {
     }
     
     // add action to Go Back button
-    @IBAction func backButtonTapped() {
-        performSegue(withIdentifier: "unwindSegue", sender: nil)
-    }
+    // can be deleted if go back is done with v07 guard segue.identifier == "unwindSegue" else { return }
+   
     
     private func findValue(for name: String) -> Int {
         var count = 0

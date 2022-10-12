@@ -87,13 +87,6 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="myLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2x-YG-RTu">
-                                <rect key="frame" x="48" y="493" width="217" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray3Color"/>
@@ -109,7 +102,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="myLabel" destination="N2x-YG-RTu" id="IbQ-54-ewa"/>
                         <outlet property="partnerNameTF" destination="pNz-b4-Bzz" id="rxv-dN-5Sx"/>
                         <outlet property="yourNameTF" destination="czA-wU-kHU" id="YqW-Fj-dLq"/>
                         <segue destination="BYx-dm-rvw" kind="show" identifier="goToResult" id="RNP-dp-Y91"/>
