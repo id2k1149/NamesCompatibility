@@ -32,13 +32,16 @@ class FirstViewController: UIViewController {
     
     //unwind -> go back from screen 2 to 1
     @IBAction func unwindSegueToFirstVC(segue: UIStoryboardSegue) {
+        //v07 way to do
+        guard segue.identifier == "unwindSegue" else { return }
+        
         // clear names values
         yourNameTF.text = ""
         partnerNameTF.text = ""
         
-        // add myLabel
-        guard let sourceVC = segue.source as? ResultViewController else { return }
-        myLabel.text = sourceVC.namesLabel.text
+        // add myLabel (example how to return value from screen 2 to 1)
+//        guard let sourceVC = segue.source as? ResultViewController else { return }
+//        myLabel.text = sourceVC.namesLabel.text
     }
     
 }

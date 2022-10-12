@@ -170,7 +170,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="5jh-y0-MMY" kind="unwind" unwindAction="unwindSegueToFirstVCWithSegue:" id="gtz-bA-wQL"/>
+                                    <action selector="backButtonTapped" destination="BYx-dm-rvw" eventType="touchUpInside" id="P6D-gR-hJc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -194,6 +194,7 @@
                         <outlet property="namesLabel" destination="cVL-5W-s0D" id="8so-19-G1y"/>
                         <outlet property="progressView" destination="jvS-vB-rB6" id="GNq-6q-3sm"/>
                         <outlet property="resultLabel" destination="jPV-Ai-QpU" id="MWC-RZ-gkC"/>
+                        <segue destination="5jh-y0-MMY" kind="unwind" identifier="unwindSegue" unwindAction="unwindSegueToFirstVCWithSegue:" id="zeQ-ah-1My"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AjL-zd-bgX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
