@@ -28,6 +28,11 @@ class FirstViewController: UIViewController {
         performSegue(withIdentifier: "goToResult", sender: nil)
     }
     
+    @IBAction func unwindSegueToFirstVC(segue: UIStoryboardSegue) {
+        yourNameTF.text = ""
+        partnerNameTF.text = ""
+    }
+    
 }
 
 // add keyboard to screen
