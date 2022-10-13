@@ -13,11 +13,6 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var partnerNameTF: UITextField!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destinationVC = segue.destination as? ResultViewController else { return }
         destinationVC.firstName = yourNameTF.text
@@ -29,7 +24,6 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func unwindSegueToFirstVC(segue: UIStoryboardSegue) {
-        guard segue.identifier == "unwindSegue" else { return }
         yourNameTF.text = ""
         partnerNameTF.text = ""
     }
@@ -37,7 +31,6 @@ class FirstViewController: UIViewController {
 }
 
 // add keyboard to screen
-
 extension FirstViewController: UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)

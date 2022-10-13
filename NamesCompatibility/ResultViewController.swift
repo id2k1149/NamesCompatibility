@@ -36,9 +36,6 @@ class ResultViewController: UIViewController {
          
     }
     
-    @IBAction func backButtonTapped() {
-        performSegue(withIdentifier: "unwindSegue", sender: nil)
-    }
     
     private func findValue(for name: String) -> Int {
         var count = 0
