@@ -18,8 +18,20 @@ class FirstViewController: UIViewController {
         destinationVC.firstName = yourNameTF.text
         destinationVC.secondName = partnerNameTF.text
     }
-
+        
     @IBAction func resultButtonTapped() {
+        // check names are not empty
+        guard let firstName = yourNameTF.text, let secondName = partnerNameTF.text else { return }
+        // if names are empty call alertController
+        if firstName.isEmpty || secondName.isEmpty {
+            showAlert(
+                title: "Names are missing",
+                // ctr-cmd-space to add emodzi
+                message: "Please enter both names 😀"
+            )
+            return
+        }
+        // go to screen 2
         performSegue(withIdentifier: "goToResult", sender: nil)
     }
     
