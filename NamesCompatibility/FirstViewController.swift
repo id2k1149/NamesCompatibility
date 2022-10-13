@@ -30,6 +30,20 @@ class FirstViewController: UIViewController {
     
 }
 
+// add alert
+extension FirstViewController {
+    private func showAlert(title: String, message: String) {
+        // object of class UIAlertController
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        // add button to close alert
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(okAction)
+        // to show alert
+        present(alert, animated: true)
+    }
+}
+
+
 // add keyboard to screen
 extension FirstViewController: UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
